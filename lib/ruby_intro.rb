@@ -26,6 +26,11 @@ end
 
 def starts_with_consonant?(string)
   # YOUR CODE HERE
+  string = string.downcase
+
+  cons = 'bcdfghjklmnpqrstvwxyz'
+
+  string.start_with?(*cons.chars)
 end
 
 def binary_multiple_of_4?(string)
