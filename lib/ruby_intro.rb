@@ -14,7 +14,7 @@ end
 
 def sum_to_n?(arr, number)
   # YOUR CODE HERE
-  false
+  arr.combination(2).any? { |x, y| x + y == number }
 end
 
 # Part 2
