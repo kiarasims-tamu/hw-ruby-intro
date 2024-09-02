@@ -14,6 +14,7 @@ end
 
 def sum_to_n?(arr, number)
   # YOUR CODE HERE
+  false
 end
 
 # Part 2
