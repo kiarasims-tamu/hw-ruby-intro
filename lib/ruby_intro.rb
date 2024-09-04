@@ -35,6 +35,13 @@ end
 
 def binary_multiple_of_4?(string)
   # YOUR CODE HERE
+  if (string =~ /^[01]+$/) == true 
+    string_del = string.to_i(2)
+    string_del % 4 == 0
+    true
+  else 
+    false
+  end
 end
 
 # Part 3
@@ -42,4 +49,24 @@ end
 # Object representing a book
 class BookInStock
   # YOUR CODE HERE
+  def initialize(isbn, price)
+    @isbn = isbn
+    @price = price
+  end
+
+  def isbn
+    @isbn
+  end
+
+  def isbn=(isbn)
+    @isbn = isbn
+  end
+
+  def price 
+    @price
+  end
+
+  def price=(price)
+    @price = price
+  end
 end
