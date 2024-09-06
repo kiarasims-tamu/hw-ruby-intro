@@ -35,12 +35,11 @@ end
 
 def binary_multiple_of_4?(string)
   # YOUR CODE HERE
-  if (string =~ /^[01]+$/) == true 
-    string_del = string.to_i(2)
-    string_del % 4 == 0
-    true
-  else 
-    false
+  return false unless string.match(/^[01]+$/)
+  
+  string_del = string.to_i(2)
+  if string_del % 4 == 0
+    return true
   end
 end
 
